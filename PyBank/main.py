@@ -60,17 +60,13 @@ with open(csvpath, encoding='UTF-8') as csvfile:
 
 # Display analysis to terminal
 print("Financial Analysis")
-print("")
+
 print("-"*30)
-print("")
+
 print(f"Total Months: {number_of_months}")
-print("")
 print(f"Total: ${net_total_amt}")
-print("")
 print(f"Average Change: ${average_change}")
-print("")
 print(f"Greatest Increase in Profits: {great_increase_month} (${great_increase_val})")
-print("")
 print(f"Greatest Decrease in Profits: {great_decrease_month} (${great_decrease_val})")
 
 # Export a text file with the results
@@ -80,16 +76,10 @@ output_file = os.path.join('.', 'analysis', 'analysis.txt')
 
 #  Open & write the output file
 with open(output_file, "w") as outputfile:
-    outputfile.write("Financial Analysis\n")
-    outputfile.write("\n")
-    outputfile.write("-"*30 + "\n")
-    outputfile.write("\n")
-    outputfile.write(f"Total Months: {number_of_months}\n")
-    outputfile.write("\n")
-    outputfile.write(f"Total: ${net_total_amt}\n")
-    outputfile.write("\n")
-    outputfile.write(f"Average Change: ${average_change}\n")
-    outputfile.write("\n")
-    outputfile.write(f"Greatest Increase in Profits: {great_increase_month} (${great_increase_val})\n")
-    outputfile.write("\n")
+    outputfile.write("Financial Analysis\n")    
+    outputfile.write("-"*30 + "\n")    
+    outputfile.write(f"Total Months: {number_of_months}\n")    
+    outputfile.write(f"Total: ${net_total_amt}\n")    
+    outputfile.write(f"Average Change: ${average_change}\n")    
+    outputfile.write(f"Greatest Increase in Profits: {great_increase_month} (${great_increase_val})\n")    
     outputfile.write(f"Greatest Decrease in Profits: {great_decrease_month} (${great_decrease_val})\n")
