@@ -78,7 +78,7 @@ print(f"Greatest Decrease in Profits: {great_decrease_month} (${great_decrease_v
 # OS file path creation for analysis.txt
 output_file = os.path.join('.', 'analysis', 'analysis.txt')
 
-#  Open the output file
+#  Open & write the output file
 with open(output_file, "w") as outputfile:
     outputfile.write("Financial Analysis\n")
     outputfile.write("\n")
