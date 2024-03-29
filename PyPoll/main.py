@@ -22,15 +22,15 @@ with open(csv_file_path, mode='r') as csvfile:
 
     for row in csvreader:          
         # Assign Candidate column row[2] to candidate_col
-        candidate_col = row[2]
+        candidate_name = row[2]
 
         # populate {candidate : number of votes}
         # if candidate does not exist in candidates dictionary, add {candidate : 1} to dictionary
         # if candidate exists in candidates dictionary, add {candidate : +=1} to dictionary
-        if candidate_col not in candidates:
-           candidates[candidate_col] = 1
+        if candidate_name not in candidates:
+           candidates[candidate_name] = 1
         else:
-           candidates[candidate_col] += 1    
+           candidates[candidate_name] += 1    
 
         total_votes += 1
 
