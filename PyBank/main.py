@@ -60,9 +60,7 @@ with open(csvpath, encoding='UTF-8') as csvfile:
 
 # Display analysis to terminal
 print("Financial Analysis")
-
 print("-"*30)
-
 print(f"Total Months: {number_of_months}")
 print(f"Total: ${net_total_amt}")
 print(f"Average Change: ${average_change}")
@@ -70,7 +68,6 @@ print(f"Greatest Increase in Profits: {great_increase_month} (${great_increase_v
 print(f"Greatest Decrease in Profits: {great_decrease_month} (${great_decrease_val})")
 
 # Export a text file with the results
-
 # OS file path creation for analysis.txt
 output_file = os.path.join('.', 'analysis', 'analysis.txt')
 
