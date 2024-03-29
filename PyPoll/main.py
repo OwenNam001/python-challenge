@@ -54,7 +54,6 @@ print("-"*30)
 
 
 # Export a text file with the results
-
 # OS file path creation for analysis.txt
 output_file = os.path.join('.', 'analysis', 'analysis.txt')
 
